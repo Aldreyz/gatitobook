@@ -1,3 +1,4 @@
+import { MensagemModule } from './componentes/mensagem/mensagem.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MensagemModule
   ],
   providers: [],
   bootstrap: [AppComponent]
