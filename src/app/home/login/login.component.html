@@ -31,8 +31,10 @@
     </div>
 
     <button type="submit"
-            class="btn btn-success col-12 mt-3 "
+            class="btn btn-success col-12 mt-3 mb-4 "
             [disabled]="loginForm.invalid">
             Login
     </button>
 </form>
+
+<p>Não e um usuario?<a [routerLink]="['novousuario']">Se cadastre!</a></p>
