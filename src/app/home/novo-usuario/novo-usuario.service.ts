@@ -7,10 +7,12 @@ import { observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NovoUsuarioService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   cadastraNovoUsuario(NovoUsuario:NovoUsuario){
-    return this.http.post('http://localhost:3000/user/signup', NovoUsuario); 
+    return this.http.post('http://localhost:3000/user/signup', NovoUsuario);
+  }
+  verificaUsuarioExistente(nomeUsuario:string){
+    return this.http.get(`http://localhost:3000/user/exists/${nomeUsuario}`);
   }
 }
