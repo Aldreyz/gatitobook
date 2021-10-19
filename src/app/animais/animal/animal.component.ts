@@ -20,6 +20,7 @@ export class AnimalComponent implements OnInit {
       this.urlOriginal = `${API}/imgs/${url}`;
     }
   }
+
   get url(): string {
     return this.urlOriginal;
   }
